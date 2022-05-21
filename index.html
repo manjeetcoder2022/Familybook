@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Family Book</title>
+
+
+    </head>
+    <body> 
+        <img src='https://i.postimg.cc/bvbxKVDT/family.jpg' id="book">
+        <h3 id="names">Family Book</h3>
+        <button id="change_image" onclick="change_image()">Next</button>
+       <script>
+var images=['https://i.postimg.cc/bvbxKVDT/family.jpg','https://i.postimg.cc/X7my4c0D/dad.jpg','https://i.postimg.cc/bwL5MJng/mom.jpg','https://i.postimg.cc/hjrb4C8q/mom-dad.jpg','https://i.postimg.cc/PfMpcpy0/sis.jpg','https://i.postimg.cc/cJGQRqXS/sis-4.jpg','https://i.postimg.cc/Fz6S1w7w/jeet.jpg']
+var names=['Family Book','Mahatam Ram','Suman Devi','Mom♥Dad','Khushboo (Sis)', 'Nishu (Sis)','Manjeet']
+var i=0
+function change_image(){
+    i++
+    if(i>images.length-1){
+        i=0
+    }
+       document.getElementById("book").src=images[i]
+ document.getElementById("names").innerHTML=names[i]
+   }
+
+     
+  
+
+        </script>
+            <style>
+                body{
+    text-align: center;
+}
+img{
+    width: 400px;
+    height:500px;
+}
+            </style>
+    </body>
+</html>
